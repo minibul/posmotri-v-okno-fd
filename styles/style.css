@@ -42,12 +42,19 @@ ol {
 
 .content {
   display: flex;
-  width: 1200px;
+  width: 1140px;
   padding: 133px 30px;
   align-items: flex-end;
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
+}
+
+@media (max-height: 800px) {
+  .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .result {
@@ -195,14 +202,14 @@ ol {
   margin-top: 5px;
 }
 
-.title__prefix,
-.title__main {
+.title__prefix {
   color: #545050;
   display: block;
 }
 
 .title__main {
   color: #fff;
+  display: block;
 }
 
 .content__details {
